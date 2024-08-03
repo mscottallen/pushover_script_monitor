@@ -15,11 +15,11 @@ This script monitors a specified job or script running on your server and sends 
 1. **Clone the Repository**: Clone this repository to your local machine or server.
 
    ```bash
-   git clone https://github.com/yourusername/monitor-and-notify.git
+   git clone https://github.com/mscottallen/pushover_script_monitor.git
    cd monitor-and-notify
    ```
 
-2. **Configure the Script**: Open `monitor_and_notify.sh` in a text editor and set the following variables:
+2. **Configure the Script**: Open `pushover_monitor.sh` in a text editor and set the following variables:
    - `JOB_NAME`: The command or script name to monitor.
    - `API_TOKEN`: Your Pushover API token.
    - `USER_KEY`: Your Pushover user key.
@@ -50,13 +50,13 @@ This script monitors a specified job or script running on your server and sends 
 3. **Make the Script Executable**: Ensure the script has executable permissions.
 
    ```bash
-   chmod +x monitor_and_notify.sh
+   chmod +x pushover_monitor.sh
    ```
 
 4. **Run the Script**: Execute the script in the background to start monitoring your job.
 
    ```bash
-   ./monitor_and_notify.sh &
+   ./pushover_monitor.sh &
    ```
 
    This will start the script and it will monitor the specified job every 60 seconds. Once the job completes, it will send a notification via Pushover.
@@ -70,7 +70,7 @@ Here is an example scenario:
 
 Steps:
 
-1. Open `monitor_and_notify.sh` and configure it as follows:
+1. Open `pushover_monitor.sh` and configure it as follows:
 
    ```bash
    #!/bin/bash
@@ -96,13 +96,13 @@ Steps:
 2. Save the file and make it executable:
 
    ```bash
-   chmod +x monitor_and_notify.sh
+   chmod +x pushover_monitor.sh
    ```
 
 3. Run the script in the background:
 
    ```bash
-   ./monitor_and_notify.sh &
+   ./pushover_monitor.sh &
    ```
 
 4. When your script (`/path/to/your_script.py`) completes, you will receive a notification via Pushover.
