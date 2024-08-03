@@ -16,7 +16,7 @@ This script monitors a specified job or script running on your server and sends 
 
    ```bash
    git clone https://github.com/mscottallen/pushover_script_monitor.git
-   cd monitor-and-notify
+   cd pushover_script_monitor
    ```
 
 2. **Configure the Script**: Open `pushover_monitor.sh` in a text editor and set the following variables:
